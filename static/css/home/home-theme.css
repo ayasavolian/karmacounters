@@ -1,0 +1,24 @@
+
+.home-second-header-section{
+	width: 100%;
+	color: #f16529;
+	font-weight: 200;
+	padding-top: 100px;
+	text-align: center;
+}
+.home-main-container-title{
+	padding-top: 200px;
+	width: 750px;
+	margin: 0 auto;
+	color: #fff;
+	font-weight: 400;
+}
+#first-title-line{
+	font-weight: 400;
+}
+#second-title-line{
+	font-weight: 100;
+}
+.larger-line-size{
+	line-height: 1.5;
+}

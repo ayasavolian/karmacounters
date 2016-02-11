@@ -1,0 +1,88 @@
+<html lang="en" ng-app="Home">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/route.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/home.js') }}"></script>
+	<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/home/home-spacing.css') }}" />
+	<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/home/home-responsive.css') }}" />
+	<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/home/home-theme.css') }}" />
+	<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/global/global-spacing.css') }}" />
+	<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/global/global-responsive.css') }}" />
+	<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/global/global-theme.css') }}" />
+</head>
+<body scrolly>
+
+<!-- 	<div ng-controller = "GreetingController">
+		{[greeting]}
+		<input ng-model="customGreeting">
+		<button ng-click = "changeGreeting(customGreeting)">Custom Greeting </button>
+		<input ng-model="notify">
+		<button ng-click = "callNotify(notify)">Notification</button>
+		<input ng-model="username">
+		<input ng-model="pass">
+		<button ng-click = "getHome(username, pass)">Call</button>
+		{[currTime]}
+		<div>
+			{[email]}
+			{[password]}
+		</div>
+	</div> -->
+	<div id = "top-bar-container" class = "medium-font-size font-color-white">
+		<div class = "top-bar-inner-container display">
+			<div class = "top-bar-left-container float-left">
+				TEMPORARY LOGO
+			</div>
+			<div class = "top-bar-right-container float-right">
+				<div class = "top-bar-right-option display">
+					<a href = "/home">home</a>
+				</div>
+				<div class = "top-bar-right-option display">
+					<a href = "/about-us">about us</a>
+				</div>
+				<div class = "top-bar-right-option display">
+					<a href = "posts">posts</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section id = "top" ng-controller = "HomeCtrl">
+		<div class = "home-background-main-container">
+			<div class = "home-main-container-title font-color-white section-header-font-size">
+				<font class = "display-none" id = "first-title-line">Our goal is to be your workplace wingman.</font><br><font id = "second-title-line">{[secondTitle]}</font>
+			</div>
+		</div>
+		<div id = "first-down-arrow" class = "down-arrow-container" move-arrow-location>
+			<div class = "down-arrow-inner-container font-color-white border-color-white">
+				<div class = "down-arrow">
+					V
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id = "second" ng-controller = "SecondCtrl">
+		<div id = "second-section" class = "home-second-section white-background-color">
+			<div id = "second-header" class = "home-second-header-section section-header-font-size">
+				Why do you wanna be my wingman?
+			</div>
+			<div class = "home-second-body">
+				<div id = "second-section-body" class = "home-second-inner-body font-color-grey larger-font-size larger-line-size justify white-space">{[secondSectionBody]}<font id = "second-section-read-more" class = "font-color-orange">[read more] </font><br><br><font id = "second-section-end" class = "font-color-orange">This blog’s purpose and my passion, is to help my fellow millennials in finding happiness and balance in the work place. I’m here to be your work place wingman (corny but catchy) and guide you through a variety of methods to improve your happiness and productivity.</font>
+				</div>
+			</div>
+		</div>
+		<div id = "second-down-arrow" class = "down-arrow-second-container" move-arrow-location>
+			<div class = "down-arrow-inner-container border-color-orange font-color-orange">
+				<div class = "down-arrow">
+					V
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id = "third">
+		<div class = "home-third-section light-grey-background-color">
+		</div>
+	</section>
+</body>
+</html>
